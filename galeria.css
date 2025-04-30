@@ -1,0 +1,288 @@
+                                                                                                                                                                     .galeria {
+    padding: 2em;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.02);
+    animation: resplandor 8s infinite alternate;
+  }
+  
+  .galeria h2 {
+    font-size: 2em;
+    color: #f0f;
+    text-shadow: 0 0 10px #f0f;
+    margin-bottom: 1em;
+  }
+  
+  .contenedor-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+  }
+  
+  .contenedor-galeria img {
+    width: 100%;
+    height: auto;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0ff;
+    transform: scale(1);
+    transition: transform 0.3s, border 0.3s;
+    cursor: pointer;
+  }
+  
+  .contenedor-galeria img:hover {
+    transform: scale(1.1);
+    border: 3px solid #f0f;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #000428, #004e92);
+    color: white;
+    overflow-x: hidden;
+  }
+  
+  /* Agregados para la galería */
+  .galeria {
+    padding: 2em;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.02);
+    animation: resplandor 8s infinite alternate;
+  }
+  
+  .galeria h2 {
+    font-size: 2em;
+    color: #f0f;
+    text-shadow: 0 0 10px #f0f;
+    margin-bottom: 1em;
+  }
+  
+  .contenedor-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+  }
+  
+  .contenedor-galeria img {
+    width: 100%;
+    height: auto;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0ff;
+    transform: scale(1);
+    transition: transform 0.3s, border 0.3s;
+    cursor: pointer;
+  }
+  
+  .contenedor-galeria img:hover {
+    transform: scale(1.1);
+    border: 3px solid #f0f;
+  }
+  
+  /* Optimización para móviles */
+  @media screen and (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contenedor-galeria {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  
+    .logo-cubo {
+      display: none;
+    }
+  
+    .contacto form {
+      width: 100%;
+      padding: 0 1em;
+    }
+  
+    header h1, .intro h2, .galeria h2, .contacto h2 {
+      font-size: 1.5em;
+    }
+  }
+  .galeria {
+    padding: 2em;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.02);
+    animation: resplandor 8s infinite alternate;
+  }
+  
+  .galeria h2 {
+    font-size: 2em;
+    color: #f0f;
+    text-shadow: 0 0 10px #f0f;
+    margin-bottom: 1em;
+  }
+  
+  .contenedor-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+  }
+  
+  .contenedor-galeria img {
+    width: 100%;
+    height: auto;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0ff;
+    transform: scale(1);
+    transition: transform 0.3s, border 0.3s;
+    cursor: pointer;
+  }
+  
+  .contenedor-galeria img:hover {
+    transform: scale(1.1);
+    border: 3px solid #f0f;
+  }
+  
+  /* Optimización para móviles */
+  @media screen and (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contenedor-galeria {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  
+    .logo-cubo {
+      display: none;
+    }
+  
+    .contacto form {
+      width: 100%;
+      padding: 0 1em;
+    }
+  
+    header h1, .intro h2, .galeria h2, .contacto h2 {
+      font-size: 1.5em;
+    }
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #000428, #004e92);
+    color: white;
+    overflow-x: hidden;
+  }
+ .galeria{
+    scroll-behavior: smooth;
+  }
+  @keyframes slideInFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .animated-left {
+    animation: slideInFromLeft 1s ease-out forwards;
+  }
+  
+  .animated-right {
+    animation: slideInFromRight 1s ease-out forwards;
+  }
+  button:hover, .contenedor-galeria img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #000428, #004e92);
+    color: white;
+    overflow-x: hidden;
+  }
+  
+  /* Agregados para la galería */
+  .galeria {
+    padding: 2em;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.02);
+    animation: resplandor 8s infinite alternate;
+  }
+  
+  .galeria h2 {
+    font-size: 2em;
+    color: #f0f;
+    text-shadow: 0 0 10px #f0f;
+    margin-bottom: 1em;
+  }
+  
+  .contenedor-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+  }
+  
+  .contenedor-galeria img {
+    width: 100%;
+    height: auto;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0ff;
+    transform: scale(1);
+    transition: transform 0.3s, border 0.3s;
+    cursor: pointer;
+  }
+  
+  .contenedor-galeria img:hover {
+    transform: scale(1.1);
+    border: 3px solid #f0f;
+  }
+  
+  /* Optimización para móviles */
+  @media screen and (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contenedor-galeria {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  
+    .logo-cubo {
+      display: none;
+    }
+  
+    .contacto form {
+      width: 100%;
+      padding: 0 1em;
+    }
+  
+    header h1, .intro h2, .galeria h2, .contacto h2 {
+      font-size: 1.5em;
+    }
+  }

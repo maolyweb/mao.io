@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff); /* Fondo azul a celeste */
+    min-height: 100vh;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(to right, #0052D4, #4364F7, #6FB1FC); /* Azul difuminado */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #ffffff; /* Borde blanco */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6); /* Sombra fuerte */
+}
+
+/* Navegación */ m
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #89f7fe;
+    transform: scale(1.2);
+}
+
+/* Contenedor principal */
+.logos-circulos-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    perspective: 1000px; /* Perspectiva 3D */
+    background: radial-gradient(circle at center, #89f7fe 0%, #66a6ff 100%); /* Gradiente azul celeste */
+}
+
+/* Logos */
+.logo-circulo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #ffffff; /* Borde blanco */
+    background: linear-gradient(45deg, #89f7fe, #66a6ff); /* Fondo azul-celeste en el logo */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Sombra profunda */
+    backdrop-filter: blur(8px); /* Difuminado (filtro de fondo) */
+    filter: brightness(1.1) contrast(1.2) saturate(1.2); /* Filtros extra */
+    transition: 
+        transform 0.5s ease, 
+        filter 0.5s ease, 
+        box-shadow 0.5s ease;
+    margin: 20px;
+    animation: float 4s ease-in-out infinite; /* Animación */
+}
+
+/* Al pasar el mouse */
+.logo-circulo:hover {
+    transform: rotateY(360deg) scale(1.2) translateZ(50px); /* Transformaciones 3D */
+    filter: brightness(1.4) saturate(1.5) blur(2px); /* Brillo, saturación y ligero blur */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+}
+
+/* Animación de "flotar" */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotateZ(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotateZ(5deg);
+    }
+}

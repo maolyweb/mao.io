@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Marca 3 - Productos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Productos Pequeñín</h1>
+    <div class="producto 1">
+        <div class="imagen-principal">
+            <img src="imagenes/aloe 24 ds.webp " alt="Producto 1" id="imagen-principal-1">
+        </div>
+        <div class="info">
+            <h2>Producto 1</h2>
+            <p>Las Toallitas Húmedas Pequeñín Aloe Vera te ofrecen una Suavidad Superior con la piel. Gracias a su tela suave y al Aloe Vera,
+                estos pañitos limpian eficazmente al tiempo que refrescan la piel de tu bebé.</p>
+    
+            <div class="presentaciones">
+                <img src="imagenes/aloe 1.webp" alt="Presentación 1" class="miniatura" onclick="cambiarImagen('imagen-principal-1', 'imagenes/aloe 1.webp')">
+                <img src="imagenes/aloe 2.webp" alt="Presentación 2" class="miniatura" onclick="cambiarImagen('imagen-principal-1', 'imagenes/aloe 2.webp')">
+            </div>
+            <a href="mailto:ventas@marca1.com?subject=Compra Producto 1" class="boton-comprar">Comprar</a>
+        </div>
+    </div>
+    <div class="producto 2">
+        <div class="imagen-principal">
+            <img src="imagenes/dermo 1.webp" alt="Producto 2" id="imagen-principal-1">
+        </div>
+        <div class="info">
+            <h2>Producto 1</h2>
+            <p>Pañitos Húmedos Pequeñín Dermo Protección, limpian profundamente,
+                dejando una capa protectora manteniendo la hidratación de la piel y dejándola suave.</p>
+            <div class="presentaciones">
+                <img src="imagenes/dermo 1.webp" alt="Presentación 1" class="miniatura" onclick="cambiarImagen('imagen-principal-1', 'imagenes/dermo 1.webp')">
+                <img src="imagenes/dermo 2.webp" alt="Presentación 2" class="miniatura" onclick="cambiarImagen('imagen-principal-1', 'imagenes/dermo 2.webp')">
+            </div>
+    
+            <a href="mailto:ventas@marca1.com?subject=Compra Producto 1" class="boton-comprar">Comprar</a>
+        </div>
+    </div>
+        
+    <a href="Marcas.html" class="volver">Volver a ver Marcas</a>
+    <a href="Index.html" class="volver">Inicio</a>
+    <script>
+        function cambiarImagen(idImagen, nuevaSrc) {
+            document.getElementById(idImagen).src = nuevaSrc;
+        }
+    </script>
+</body>
+</html>

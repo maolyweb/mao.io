@@ -1,0 +1,38 @@
+.contactos {
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+    animation: aparecer 1s ease-in-out;
+  }
+  
+  .contacto {
+    margin-bottom: 20px;
+  }
+  
+  .contacto i {
+    font-size: 24px;
+    color: #333;
+    margin-right: 10px;
+  }
+  
+  .contacto a {
+    font-size: 18px;
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .contacto a:hover {
+    color: #333;
+  }
+  
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

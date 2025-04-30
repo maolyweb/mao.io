@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marca 1 - Productos</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h1>Productos Familia</h1>
+    <div class="productos-container">
+        <div class="producto">  imagenes/jumbo 1.png
+            <img src="imagenes/triplemax.webp" alt="Producto 1">
+        <div class="producto">
+            <div class="imagen-principal">
+                <img src="imagenes/triplemax.webp" alt="Producto 1" id="imagen-principal-1">
+            </div>
+            <div class="info">
+                <h2>Producto 1</h2>
+                <p>El nuevo Familia® TripleMAX, el único Papel Higiénico Familia® 3 hojas con tecnología que bloquea los malos olores. 
+                    Con un Máximo Rendimiento. comparado con el rendimiento de papel higiénico Familia AromaMAX 
+                    Encúentralo en tu tienda más cercana</p>
+                <div class="presentaciones">
+                    <img src="imagenes/tri max 1.webp" alt="Presentación 1" class="miniatura" onclick="cambiarImagen('imagen-principal-1', 'imagenes/tri max 1.webp')">
+                    <img src="imagenes/tri max 2.webp" alt="Presentación 2" class="miniatura" onclick="cambiarImagen('imagen-principal-1', 'imagenes/tri max 2.webp')">
+                    <img src="imagenes/tri max 3.webp" alt="Presentación 3" class="miniatura" onclick="cambiarImagen('imagen-principal-1', 'imagenes/tri max 3.webp')">
+                    <img src="imagenes/tri max 4.webp" alt="Presentación 4" class="miniatura" onclick="cambiarImagen('imagen-principal-1', ' imagenes/tri max 4.webp')">
+                </div>
+                <a href="mailto:ventas@marca1.com?subject=Compra Producto 1" class="boton-comprar">Comprar</a>
+            </div>
+        </div>
+        <div class="producto">
+            <img src="imagenes/acolchamax servilletas decorada x200 2.png" alt="Producto 1">
+            <div class="info">
+                <h2>Producto 1</h2>
+                <p> </p>
+                <a href="mailto:ventas@marca1.com?subject=Compra Producto 2" class="boton-comprar">Comprar</a>
+            </div>
+        </div>
+
+    <a href="Marcas.html" class="volver">Volver a ver Marcas</a>
+    <a href="Index.html" class="volver">Inicio</a>
+    <script>
+        function cambiarImagen(idImagen, nuevaSrc) {
+            document.getElementById(idImagen).src = nuevaSrc;
+        }
+    </script>
+</body>
+</html>
